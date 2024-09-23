@@ -13,7 +13,7 @@ the BPPLIB library by M. Delorme, M. Iori, and S. Martello, "BPPLIB: A library f
 Instances, all with item sizes within [0.1l, 0.8l], are grouped in tens named BPP_<n>_<l>, with n ∈ {50, 100, 200} and l ∈
 {50, 75, 100, 120, 125, 150, 200, 300, 400, 500, 750, 1000}.
 
-Random_Ir
+Random_small_Ir
 New set Ir of 120 small random instances BPP_20_<l>, with l ∈ {50, 75, 100, 120, 125, 150, 200, 300, 400, 500, 750, 1000} and due dates of type C, has been generated to test the branch-and-price.
 
 Each instance is a .txt file formatted as follows:
