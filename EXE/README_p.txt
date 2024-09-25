@@ -22,7 +22,7 @@ p maxColumns
 maximum number of column in mathematical programs
 
 p printLevel
-enable print of detailed information (>= 0)
+enable print of detailed information (>= 0). Suggested 0
 
 p aggregatedModel
 0 = use model [M2] in section 3.2, 1 = use model [M2Ag] in section 4
