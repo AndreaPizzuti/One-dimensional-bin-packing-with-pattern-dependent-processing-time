@@ -1,3 +1,12 @@
+1BP-VPT.exe was coded in C++ and compiled in Visual Studio 2017 with numerical precision set to 10⁻⁶. All the formulations are solved by using IBM CPLEX 22.1.1.0 with the settings CPX PARAM CLOCKTYPE = 1 and CPX PARAM THREADS = 1. 
+It is required to have IBM CPLEX 22.1.1.0 installed on the machine with a valid license.    
+
+To run the execution, use the command from windows shell:
+1BP-VPT <instance_file> <parameter_file>
+
+An example of command follows:
+1BP-VPT BPP_50_50_0.1_0.8_0.A.txt p.txt
+
 Parameter file format:
 
 p Alpha1
@@ -12,47 +21,8 @@ setup time per bin
 p ProcTime
 processing time per item
 
-p cplexHeuristic
-0 (not used)
-
 p maxRunningTime
 time limit in seconds allowed for the execution
 
 p maxColumns
 maximum number of column in mathematical programs
-
-p printLevel
-enable print of detailed information (>= 0). Suggested 0
-
-p aggregatedModel
-0 = use model [M2] in section 3.2, 1 = use model [M2Ag] in section 4
-
-p onlyRoot: 
-1 = solve by CG the continuous relaxation at the root node, 0 = use branch-and-price
-
-p allcolumns
-1 (not used)
-
-p earlyTermination
-0 (not used)
-
-p RoundingPostProcessing
-1 (not used)
-
-p RoundingChecking
-0 (not used)
-
-p roundingByFixing
-1 (not used)
-
-p incrPricing
-0.001 (not used)
-
-p cntIncrPricing
-0 (not used)
-
-p nodesAllColumns
-1 (not used)
-
-p alwaysrounding
-1 (not used)
