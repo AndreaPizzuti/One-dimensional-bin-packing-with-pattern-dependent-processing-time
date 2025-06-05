@@ -2,9 +2,9 @@
 It is required to have IBM CPLEX 22.1.1.0 installed on the machine with a valid license.    
 
 To run the execution, use the command from windows shell:
-1BP-VPT <instance_file> <parameter_file> run_CG
+1BP-VPT <instance_file> <parameter_file> <col_gen>
 
-run_CG: 1 to run the column generation procedure; 0 to run only the primal heuristic
+<col_gen>: 1 to run the column generation and branch-and-price procedure; 0 to run only the primal heuristic
 
 An example of command follows:
 1BP-VPT BPP_50_50_0.1_0.8_0.A.txt p.txt 1
